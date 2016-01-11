@@ -1,0 +1,18 @@
+info:
+  component: Zuul Server
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
+    fetchRegistry: true
+    
+server:
+  port: 8765
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+     

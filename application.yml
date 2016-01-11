@@ -1,0 +1,9 @@
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+  refresh:
+    enabled: true

@@ -1,0 +1,49 @@
+server: 
+  port: 8760
+
+eureka:
+  client:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
+    registerWithEureka: true
+    fetchRegistry: true
+
+serviceManager:
+  docker-image-prefix: tndavidson
+  jmxMonitorTimerInterval: 5000
+  load-simulator-sleep-interval: 700
+  enable-docker: false
+  enable-auto-bootstrap: true
+  auto-bootstrap:
+    ############## CSRT Core Processes: #############
+    discovery: 
+      discovery-client: true 
+      command: "/Users/timd/git/csrt-framework/bin/jars/" 
+      port: 8761 
+      hosts: 
+        - "ip-172-31-30-255.us-west-2.compute.internal"
+        - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-253.us-west-2.compute.internal"
+    router: 
+      discovery-client: true 
+      command: "/Users/timd/git/csrt-framework/bin/jars/" 
+      port: 8765 
+      hosts: 
+        - "ip-172-31-30-255.us-west-2.compute.internal"
+        - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-253.us-west-2.compute.internal"
+    query-service: 
+      discovery-client: true 
+      command: "" 
+      port: 8762 
+      hosts: 
+        - "ip-172-31-30-255.us-west-2.compute.internal"
+        - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-253.us-west-2.compute.internal"
+    redis-query-service: 
+      discovery-client: true 
+      command: "/Users/timd/git/csrt-framework/bin/jars/" 
+      port: 8763 
+      hosts: 
+        - "ip-172-31-30-255.us-west-2.compute.internal"
+        - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-253.us-west-2.compute.internal"

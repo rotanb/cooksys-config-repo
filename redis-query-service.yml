@@ -1,0 +1,4 @@
+redisQueryService:
+  redis:
+    host: localhost
+    port: 6379
