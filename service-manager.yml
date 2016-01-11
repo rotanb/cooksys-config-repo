@@ -17,7 +17,7 @@ serviceManager:
     ############## CSRT Core Processes: #############
     discovery: 
       discovery-client: true 
-      command: "/Users/timd/git/csrt-framework/bin/jars/" 
+      command: "/home/tim/bin/jars/discovery-0.3.1-RELEASE.jar" 
       port: 8761 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
@@ -25,7 +25,7 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     router: 
       discovery-client: true 
-      command: "/Users/timd/git/csrt-framework/bin/jars/" 
+      command: "/home/tim/bin/jars/router-0.3.1-RELEASE.jar" 
       port: 8765 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
@@ -33,7 +33,7 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     query-service: 
       discovery-client: true 
-      command: "" 
+      command: "/home/tim/bin/jars/query-service-0.3.1-RELEASE.jar" 
       port: 8762 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
@@ -41,7 +41,7 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     redis-query-service: 
       discovery-client: true 
-      command: "/Users/timd/git/csrt-framework/bin/jars/" 
+      command: "/home/tim/bin/jars/redis-query-service-0.3.1-RELEASE.jar" 
       port: 8763 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
