@@ -44,7 +44,7 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     hello-world:
       discovery-client: true
-      command: "/home/tim/bin/jars/hello-world-0.3.3-SNAPSHOT.jar"
+      command: "/home/tim/bin/jars/hello-world-0.3.1-RELEASE.jar"
       port: 8763
       hosts: 
         - "ip-172-31-30-254.us-west-2.compute.internal"
