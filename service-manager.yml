@@ -8,6 +8,9 @@ eureka:
     fetchRegistry: true
 
 serviceManager:
+  docker:
+      host: localhost
+      port: 8000
   docker-image-prefix: tndavidson
   jmxMonitorTimerInterval: 5000
   load-simulator-sleep-interval: 700
