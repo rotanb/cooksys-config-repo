@@ -12,3 +12,13 @@ server:
   port: 8765
 
      
+router:
+  services:
+    hello-world:
+      deployments:
+        hello-world:
+          auto-scale: true
+          auto-start: true
+          max-instances: 6
+          min-instances: 1
+          traffic-ratio: 1
