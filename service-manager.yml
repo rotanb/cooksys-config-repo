@@ -20,7 +20,7 @@ serviceManager:
     ############## CSRT Core Processes: #############
     discovery: 
       discovery-client: true 
-      command: "/home/tim/bin/jars/discovery-0.3.1-RELEASE.jar" 
+      command: "/home/tim/bin/jars/discovery-0.4.1-SNAPSHOT.jar" 
       port: 8761 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
@@ -28,7 +28,7 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     router: 
       discovery-client: true 
-      command: "/home/tim/bin/jars/router-0.3.1-RELEASE.jar" 
+      command: "/home/tim/bin/jars/router-0.4.1-SNAPSHOT.jar" 
       port: 8765 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
@@ -36,7 +36,7 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     query-service: 
       discovery-client: true 
-      command: "/home/tim/bin/jars/query-service-0.3.1-RELEASE.jar" 
+      command: "/home/tim/bin/jars/query-service-0.4.1-SNAPSHOT.jar" 
       port: 8762 
       hosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
@@ -44,13 +44,13 @@ serviceManager:
         - "ip-172-31-30-253.us-west-2.compute.internal"
     hello-world:
       discovery-client: true
-      command: "/home/tim/bin/jars/hello-world-0.3.3-SNAPSHOT.jar"
+      command: "/home/tim/bin/jars/hello-world-0.4.1-SNAPSHOT.jar"
       port: 8763
       hosts: 
         - "ip-172-31-30-254.us-west-2.compute.internal"
     greeting-service:
       discovery-client: true
-      command: "/home/tim/bin/jars/greeting-service-0.3.3-SNAPSHOT.jar"
+      command: "/home/tim/bin/jars/greeting-service-0.4.1-SNAPSHOT.jar"
       port: 8764
       hosts: 
         - "ip-172-31-30-253.us-west-2.compute.internal"
