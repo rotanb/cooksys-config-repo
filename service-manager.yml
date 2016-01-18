@@ -15,7 +15,7 @@ serviceManager:
   jmxMonitorTimerInterval: 5000
   load-simulator-sleep-interval: 700
   enable-docker: false
-  enable-auto-bootstrap: true
+  enable-auto-bootstrap: false
   auto-bootstrap:
     ############## CSRT Core Processes: #############
     discovery: 
