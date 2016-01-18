@@ -16,7 +16,7 @@ router:
   enable-service-discovery-filter: true
   auto-scale:
     scale-down-threshold: 1
-    scale-up-threshold: 50
+    scale-up-threshold: 5
   services:
     hello-world:
       deployments:
