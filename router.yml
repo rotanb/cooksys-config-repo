@@ -13,7 +13,7 @@ server:
 
      
 router:
-  enable-service-discovery-filter: true
+  enable-service-discovery-filter: false
   auto-scale:
     scale-down-threshold: 1
     scale-up-threshold: 5
