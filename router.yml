@@ -26,3 +26,8 @@ router:
           max-instances: 3
           min-instances: 1
           traffic-ratio: 1
+
+logging: 
+  level:
+    com.amex.csrt.router.filters: ERROR
+    org.springframework.cloud.netflix.zuul.filters.ProxyRouteLocator: ERROR
