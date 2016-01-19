@@ -22,7 +22,7 @@ router:
       deployments:
         hello-world:
           auto-scale: true
-          auto-start: true
+          auto-start: false
           max-instances: 3
           min-instances: 1
           traffic-ratio: 1
