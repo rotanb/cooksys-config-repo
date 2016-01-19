@@ -23,6 +23,6 @@ router:
         hello-world:
           auto-scale: true
           auto-start: true
-          max-instances: 6
+          max-instances: 3
           min-instances: 1
           traffic-ratio: 1
