@@ -47,7 +47,7 @@ serviceManager:
       command: "/home/tim/bin/jars/hello-world-0.4.1-SNAPSHOT.jar"
       port: 8763
       hosts: 
-        - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-255.us-west-2.compute.internal"
   #  greeting-service:
   #    discovery-client: true
   #    command: "/home/tim/bin/jars/greeting-service-0.4.1-SNAPSHOT.jar"
