@@ -7,3 +7,7 @@ endpoints:
     sensitive: false
   refresh:
     enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
