@@ -18,22 +18,22 @@ router:
     scale-down-threshold: 1
     scale-up-threshold: 5
   services:
-    hello-world:
-      deployments:
-        hello-world:
-          auto-scale: true
-          auto-start: false
-          max-instances: 3
-          min-instances: 1
-          traffic-ratio: 1
-    #merchant-locator:
+    #hello-world:
     #  deployments:
-    #    merchant-locator:
+    #    hello-world:
     #      auto-scale: true
     #      auto-start: false
     #      max-instances: 3
     #      min-instances: 1
     #      traffic-ratio: 1
+    merchant-locator:
+      deployments:
+        merchant-locator:
+          auto-scale: true
+          auto-start: false
+          max-instances: 3
+          min-instances: 1
+          traffic-ratio: 1
 
 logging: 
   level:
