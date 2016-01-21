@@ -26,6 +26,14 @@ router:
           max-instances: 3
           min-instances: 1
           traffic-ratio: 1
+    merchant-locator:
+      deployments:
+        merchant-locator:
+          auto-scale: true
+          auto-start: false
+          max-instances: 3
+          min-instances: 1
+          traffic-ratio: 1
 
 logging: 
   level:
