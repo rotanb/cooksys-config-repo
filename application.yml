@@ -11,3 +11,4 @@ endpoints:
 eureka:
   instance:
     prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 5
