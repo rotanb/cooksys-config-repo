@@ -12,3 +12,8 @@ eureka:
   instance:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 5
+
+spring:
+  rabbitmq:
+    host: 172.31.7.158
+    port: 8760
