@@ -57,7 +57,7 @@ serviceManager:
       auto-scale: true
       scaleUpResponseTimeThreshold: 400
       scaleDownResponseTimeThreshold: 200
-      maxInstances: 6
+      maxInstances: 3
       minInstances: 1
       stableMaxIterations: 3
       unstableMaxIterations: 3
