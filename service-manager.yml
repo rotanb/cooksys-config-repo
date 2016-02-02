@@ -55,8 +55,8 @@ serviceManager:
     merchant-locator:
       discovery-client: true
       auto-scale: true
-      scaleUpResponseTimeThreshold: 400
-      scaleDownResponseTimeThreshold: 200
+      scaleUpResponseTimeThreshold: 200
+      scaleDownResponseTimeThreshold: 5
       maxInstances: 3
       minInstances: 1
       stableMaxIterations: 3
