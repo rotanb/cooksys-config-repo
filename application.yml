@@ -15,5 +15,5 @@ eureka:
 
 spring:
   rabbitmq:
-    host: 172.31.7.158
-    port: 8760
+    host: 172.31.30.253
+    port: 8766
