@@ -16,6 +16,7 @@ serviceManager:
   load-simulator-sleep-interval: 700
   enable-docker: false
   enable-auto-bootstrap: true
+  newServiceRegistrationTimeout: 60000
   auto-bootstrap:
     ############## CSRT Core Processes: #############
     discovery: 
