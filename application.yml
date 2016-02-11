@@ -12,6 +12,15 @@ eureka:
   instance:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 30
+  client: 
+    initialInstanceInfoReplicationIntervalSeconds: 5
+    instanceInfoReplicationIntervalSeconds: 5
+  server: 
+    response-cache-update-interval-ms: 5000
+
+ribbon: 
+  serverListRefreshInterval: 1000
 
 spring:
   rabbitmq:
