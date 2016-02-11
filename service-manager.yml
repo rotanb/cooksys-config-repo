@@ -72,7 +72,7 @@ serviceManager:
       unstableMaxIterations: 3
       version: "SNAPSHOT"
       ports: 
-        "9010-9016"
+        - "9010-9016"
       bootstrapHosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
     # Rabbit is running on host ip-172-31-30-253.us-west-2.compute.internal port 8766 and management port 8767
