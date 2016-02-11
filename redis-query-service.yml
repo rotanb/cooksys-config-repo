@@ -1,4 +1,4 @@
 redisQueryService:
   redis:
-    host: ip-172-31-16-246.us-west-2.compute.internal
-    port: 6379
+    host: ip-172-31-30-255.us-west-2.compute.internal
+    port: 9000
