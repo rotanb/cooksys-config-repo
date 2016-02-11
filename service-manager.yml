@@ -44,7 +44,7 @@ serviceManager:
       discovery-client: true
       version: "SNAPSHOT" 
       ports: 
-        -"8766"
+        - "8766"
       bootstrapHosts:
         - "ip-172-31-30-255.us-west-2.compute.internal"
     query-service: 
