@@ -18,7 +18,7 @@ serviceManager:
   enable-auto-bootstrap: true
   newServiceRegistrationTimeout: 300000
   redisHost: ip-172-31-30-255.us-west-2.compute.internal
-  redisPort: 6379
+  redisPort: 9000
   tempJarDirectory: "/tmp/jars"
   serviceConfig:
     ############## CSRT Core Processes: #############
