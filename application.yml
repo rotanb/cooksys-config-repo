@@ -28,3 +28,4 @@ spring:
     port: 9001
 
 hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 30
+server.tomcat.max-threads: 300
