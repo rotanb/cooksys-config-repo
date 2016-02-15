@@ -26,3 +26,5 @@ spring:
   rabbitmq:
     host: ip-172-31-30-255.us-west-2.compute.internal
     port: 9001
+
+hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 30
