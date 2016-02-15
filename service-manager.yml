@@ -61,20 +61,6 @@ serviceManager:
         - "8763"
       bootstrapHosts: 
         - "ip-172-31-30-254.us-west-2.compute.internal"
-    merchant-locator:
-      discovery-client: true
-      auto-scale: true
-      scaleUpResponseTimeThreshold: 200
-      scaleDownResponseTimeThreshold: 5
-      maxInstances: 6
-      minInstances: 1
-      stableMaxIterations: 3
-      unstableMaxIterations: 3
-      version: "SNAPSHOT"
-      ports: 
-        - "9010-9016"
-      #bootstrapHosts: 
-      #  - "ip-172-31-30-255.us-west-2.compute.internal"
     hello-world:
       discovery-client: true
       auto-scale: false
@@ -86,7 +72,7 @@ serviceManager:
       unstableMaxIterations: 3
       version: "SNAPSHOT"
       ports: 
-        - "9099"
+        - "9010"
       bootstrapHosts: 
         - "ip-172-31-30-254.us-west-2.compute.internal"
     # Rabbit is running on host ip-172-31-30-253.us-west-2.compute.internal port 8766 and management port 8767
