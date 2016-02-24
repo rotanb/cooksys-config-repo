@@ -13,6 +13,8 @@ server:
 
      
 router:
+  redisHost: ip-172-31-30-255.us-west-2.compute.internal
+  redisPort: 9000
   enable-service-discovery-filter: false
   auto-scale:
     scale-down-threshold: 1
@@ -29,10 +31,6 @@ router:
     merchant-locator:
       deployments:
         merchant-locator:
-          auto-scale: true
-          auto-start: false
-          max-instances: 3
-          min-instances: 1
           traffic-ratio: 1
 
 logging: 
