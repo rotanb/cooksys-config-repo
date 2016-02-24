@@ -23,10 +23,16 @@ eureka:
 ribbon: 
   serverListRefreshInterval: 1000
 
-spring:
-  rabbitmq:
-    host: ip-172-31-30-255.us-west-2.compute.internal
-    port: 9001
+eventBus:
+  broker: redis
+  redisHost: 192.168.99.100
+  redisPort: 6379
+  redisTopic: csrt-event-bus
+  
+#spring:
+#  rabbitmq:
+#    host: ip-172-31-30-255.us-west-2.compute.internal
+#    port: 9001
 
 hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 30
 server.tomcat.max-threads: 300
