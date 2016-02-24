@@ -23,6 +23,7 @@ serviceManager:
   serviceConfig:
     ############## CSRT Core Processes: #############
     discovery: 
+      sslEnabled: false
       discovery-client: true 
       version: "SNAPSHOT" 
       ports: 
@@ -31,16 +32,18 @@ serviceManager:
         - "ip-172-31-30-255.us-west-2.compute.internal"
         - "ip-172-31-30-254.us-west-2.compute.internal"
         - "ip-172-31-30-253.us-west-2.compute.internal"
-    router: 
+    router:
+      sslEnabled: false
       discovery-client: true 
       version: "SNAPSHOT" 
       ports: 
         - "8765" 
       bootstrapHosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal"
-        #- "ip-172-31-30-254.us-west-2.compute.internal"
-        #- "ip-172-31-30-253.us-west-2.compute.internal"
+        - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-253.us-west-2.compute.internal"
     turbine:
+      sslEnabled: false
       discovery-client: true
       version: "SNAPSHOT" 
       ports: 
@@ -48,6 +51,7 @@ serviceManager:
       bootstrapHosts:
         - "ip-172-31-30-255.us-west-2.compute.internal"
     query-service: 
+      sslEnabled: false
       discovery-client: true 
       version: "SNAPSHOT"
       ports: 
@@ -55,24 +59,10 @@ serviceManager:
       bootstrapHosts: 
         - "ip-172-31-30-253.us-west-2.compute.internal"
     redis-query-service:
+      sslEnabled: false
       discovery-client: true
       version: "SNAPSHOT"
       ports: 
         - "8763"
       bootstrapHosts: 
         - "ip-172-31-30-254.us-west-2.compute.internal"
-    hello-world:
-      discovery-client: true
-      auto-scale: false
-      scaleUpResponseTimeThreshold: 200
-      scaleDownResponseTimeThreshold: 5
-      maxInstances: 1
-      minInstances: 1
-      stableMaxIterations: 3
-      unstableMaxIterations: 3
-      version: "SNAPSHOT"
-      ports: 
-        - "9010"
-      bootstrapHosts: 
-        - "ip-172-31-30-254.us-west-2.compute.internal"
-    # Rabbit is running on host ip-172-31-30-253.us-west-2.compute.internal port 8766 and management port 8767
