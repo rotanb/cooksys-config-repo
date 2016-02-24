@@ -12,13 +12,14 @@ eureka:
   instance:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInSeconds: 30
+    leaseExpirationDurationInSeconds: 5
   client: 
     initialInstanceInfoReplicationIntervalSeconds: 5
     instanceInfoReplicationIntervalSeconds: 5
+    registryFetchIntervalSeconds: 5
   server: 
     response-cache-update-interval-ms: 5000
-
+    
 ribbon: 
   serverListRefreshInterval: 1000
 
