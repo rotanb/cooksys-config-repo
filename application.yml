@@ -25,8 +25,8 @@ ribbon:
 
 eventBus:
   broker: redis
-  redisHost: 192.168.99.100
-  redisPort: 6379
+  redisHost: ip-172-31-30-255.us-west-2.compute.internal
+  redisPort: 9000
   redisTopic: csrt-event-bus
   
 #spring:
