@@ -15,11 +15,8 @@ server:
 router:
   redisHost: ip-172-31-30-255.us-west-2.compute.internal
   redisPort: 9000
-  enable-service-discovery-filter: false
-  auto-scale:
-    scale-down-threshold: 1
-    scale-up-threshold: 5
-  services:
+  enable-service-discovery-filter: true
+  #services:
     #hello-world:
     #  deployments:
     #    hello-world:
