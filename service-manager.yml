@@ -57,12 +57,13 @@ serviceManager:
       ports: 
         - "8762" 
       bootstrapHosts: 
-        - "ip-172-31-30-253.us-west-2.compute.internal"
-    redis-query-service:
-      sslEnabled: false
-      discovery-client: true
-      version: "SNAPSHOT"
-      ports: 
-        - "8763"
-      bootstrapHosts: 
+        - "ip-172-31-30-255.us-west-2.compute.internal"
         - "ip-172-31-30-254.us-west-2.compute.internal"
+        - "ip-172-31-30-253.us-west-2.compute.internal"
+    merchant-locator:
+      sslEnabled: false
+      discoveryClient: true
+      version: "SNAPSHOT"
+      ports: 9010-9015
+      bootstrapHosts: 
+        - "ip-172-31-30-255.us-west-2.compute.internal" 
