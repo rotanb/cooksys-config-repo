@@ -64,6 +64,7 @@ serviceManager:
       sslEnabled: false
       discoveryClient: true
       version: "SNAPSHOT"
-      ports: 9010-9015
+      ports: 
+        - "9010-9015"
       bootstrapHosts: 
         - "ip-172-31-30-255.us-west-2.compute.internal" 
