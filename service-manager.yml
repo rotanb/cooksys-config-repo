@@ -17,8 +17,8 @@ serviceManager:
   enable-docker: false
   enable-auto-bootstrap: true
   newServiceRegistrationTimeout: 300000
-  redisHost: ip-172-31-30-255.us-west-2.compute.internal
-  redisPort: 9000
+  redisHost: localhost
+  redisPort: 6379
   tempJarDirectory: "/tmp/jars"
   serviceConfig:
     ############## CSRT Core Processes: #############
@@ -29,9 +29,7 @@ serviceManager:
       ports: 
         - "8761" 
       bootstrapHosts: 
-        - "ip-172-31-30-255.us-west-2.compute.internal"
-        - "ip-172-31-30-254.us-west-2.compute.internal"
-        - "ip-172-31-30-253.us-west-2.compute.internal"
+        - "canary"
     router:
       sslEnabled: false
       discovery-client: true 
@@ -39,9 +37,7 @@ serviceManager:
       ports: 
         - "8765" 
       bootstrapHosts: 
-        - "ip-172-31-30-255.us-west-2.compute.internal"
-        - "ip-172-31-30-254.us-west-2.compute.internal"
-        - "ip-172-31-30-253.us-west-2.compute.internal"
+        - "canary"
     turbine:
       sslEnabled: false
       discovery-client: true
@@ -49,5 +45,21 @@ serviceManager:
       ports: 
         - "8766"
       bootstrapHosts:
-        - "ip-172-31-30-255.us-west-2.compute.internal"
+        - "canary"
+    hello-world:
+      sslEnabled: false
+      discovery-client: true
+      auto-scale: true
+      scaleUpResponseTimeThreshold: 250
+      scaleDownResponseTimeThreshold: 5
+      maxInstances: 3
+      minInstances: 1
+      stableMaxIterations: 3
+      unstableMaxIterations: 3
+      version: "0.4.5-SNAPSHOT"
+      ports: 
+        - "9010-9019"
+      bootstrapHosts: 
+        - "canary"
+
    
