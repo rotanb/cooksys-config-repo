@@ -25,7 +25,7 @@ serviceManager:
     discovery: 
       sslEnabled: false
       discovery-client: true 
-      version: "SNAPSHOT" 
+      version: "0.4.5-SNAPSHOT" 
       ports: 
         - "8761" 
       bootstrapHosts: 
@@ -35,7 +35,7 @@ serviceManager:
     router:
       sslEnabled: false
       discovery-client: true 
-      version: "SNAPSHOT" 
+      version: "0.4.5-SNAPSHOT"
       ports: 
         - "8765" 
       bootstrapHosts: 
@@ -45,26 +45,9 @@ serviceManager:
     turbine:
       sslEnabled: false
       discovery-client: true
-      version: "SNAPSHOT" 
+      version: "0.4.5-SNAPSHOT"
       ports: 
         - "8766"
       bootstrapHosts:
         - "ip-172-31-30-255.us-west-2.compute.internal"
-    query-service: 
-      sslEnabled: false
-      discovery-client: true 
-      version: "SNAPSHOT"
-      ports: 
-        - "8762" 
-      bootstrapHosts: 
-        - "ip-172-31-30-255.us-west-2.compute.internal"
-        - "ip-172-31-30-254.us-west-2.compute.internal"
-        - "ip-172-31-30-253.us-west-2.compute.internal"
-    merchant-locator:
-      sslEnabled: false
-      discoveryClient: true
-      version: "SNAPSHOT"
-      ports: 
-        - "9010-9015"
-      bootstrapHosts: 
-        - "ip-172-31-30-255.us-west-2.compute.internal" 
+   
