@@ -13,21 +13,14 @@ server:
 
      
 router:
-  redisHost: ip-172-31-30-255.us-west-2.compute.internal
-  redisPort: 9000
+  redisHost: localhost
+  redisPort: 6379
   enable-service-discovery-filter: true
-  #services:
-    #hello-world:
-    #  deployments:
-    #    hello-world:
-    #      auto-scale: true
-    #      auto-start: false
-    #      max-instances: 3
-    #      min-instances: 1
-    #      traffic-ratio: 1
+  services:
+    hello-world:
+      deployments:
+        hello-world:
+          traffic-ratio: 1
 
 
-logging: 
-  level:
-    com.amex.csrt.router.filters: ERROR
-    org.springframework.cloud.netflix.zuul.filters.ProxyRouteLocator: ERROR
+
