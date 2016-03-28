@@ -18,7 +18,7 @@ eureka:
     instanceInfoReplicationIntervalSeconds: 5
     registryFetchIntervalSeconds: 5
         service-url:
-      defaultZone: http://172.31.16.246:8761/eureka/
+      defaultZone: http://66.195.246.158:8761/eureka/
   server: 
     response-cache-update-interval-ms: 5000
     
