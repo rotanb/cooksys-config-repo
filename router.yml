@@ -16,11 +16,5 @@ router:
   redisHost: localhost
   redisPort: 6379
   enable-service-discovery-filter: true
-  services:
-    hello-world:
-      deployments:
-        hello-world:
-          traffic-ratio: 1
-
 
 
